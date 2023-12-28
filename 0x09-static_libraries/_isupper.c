@@ -1,7 +1,0 @@
-/* _isupper.c */
-#include <unistd.h>
-
-int _isupper(char c)
-{
-    return write(1, &c, 1);
-}

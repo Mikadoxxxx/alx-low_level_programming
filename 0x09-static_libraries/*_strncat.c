@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 
-int _putchar(char c) {
+char *_strncat(char *dest, char *src, int n) {
     return write(1, &c, 1);
 }
 

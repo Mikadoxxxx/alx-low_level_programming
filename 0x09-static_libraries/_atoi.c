@@ -1,7 +1,20 @@
 #include "main.h"
-#include <unistd.h>
 
 int _atoi(char *s) {
-    return write(1, &c, 1);
+    int result = 0;
+    int sign = 1;
+
+    while (*s) {
+        if (*s == '-') {
+            sign *= -1;
+        } else if (*s >= '0' && *s <= '9') {
+            result = result * 10 + (*s - '0');
+        } else {
+            break;
+        }
+        s++;
+    }
+
+    return sign * result;
 }
 

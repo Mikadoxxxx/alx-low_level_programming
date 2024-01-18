@@ -2,6 +2,10 @@
 #include <unistd.h>
 
 void _puts(char *s) {
-    return write(1, &c, 1);
+    while (*s != '\0') {
+        _putchar(*s);
+        s++;
+    }
+    _putchar('\n');
 }
 

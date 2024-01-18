@@ -1,7 +1,11 @@
 #include "main.h"
-#include <unistd.h>
 
 int _strlen(char *s) {
-    return write(1, &c, 1);
+    int count = 0;
+    while (*s != '\0') {
+        count++;
+        s++;
+    }
+    return count;
 }
 

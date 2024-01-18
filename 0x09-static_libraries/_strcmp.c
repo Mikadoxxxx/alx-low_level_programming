@@ -1,7 +1,11 @@
 #include "main.h"
-#include <unistd.h>
 
 int _strcmp(char *s1, char *s2) {
-    return write(1, &c, 1);
+    while (*s1 && (*s1 == *s2)) {
+        s1++;
+        s2++;
+    }
+
+    return *s1 - *s2;
 }
 
